@@ -34,7 +34,8 @@ public class ReactiveSources {
                 });
     }
 
-    public static Mono<Integer> intNumberMono() {
+    public static Mono<Integer> intNumberMono() throws InterruptedException {
+    	Thread.sleep(1000);
         return Mono.just(42)
                 .delayElement(Duration.ofSeconds(1));
     }
