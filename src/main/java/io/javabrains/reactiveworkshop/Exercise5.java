@@ -19,6 +19,7 @@ public class Exercise5 {
         // Subscribe to a mono using an implementation of BaseSubscriber
         // TODO: Write code here
     	ReactiveSources.intNumbersFlux().subscribe(new MySubscriber<>());
+    	
 
         System.out.println("Press a key to end");
         System.in.read();
